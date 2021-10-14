@@ -41,24 +41,7 @@ class asr_data_info():
                             'commonvoice-clean':'https://commonvoice.mozilla.org/en/datasets',
                             'whisper-spire':'FILL'
                             }
-        self.test_speakers = {
-                            'librispeech-clean':'FILL',
-                            'librispeech-other':'FILL',
-                            'commonvoice-clean':'FILL',
-                            'whisper-spire':'FILL'
-                            }
-        self.test_sentences = {
-                            'librispeech-clean':'FILL',
-                            'librispeech-other':'FILL',
-                            'commonvoice-clean':'FILL',
-                            'whisper-spire':'FILL'
-                            }
-        self.test_durations = {
-                            'librispeech-clean':'FILL',
-                            'librispeech-other':'FILL',
-                            'commonvoice-clean':'FILL',
-                            'whisper-spire':'FILL'
-                            }
+   
 
 
 ASR_MODEL_INFO  = asr_model_info()
