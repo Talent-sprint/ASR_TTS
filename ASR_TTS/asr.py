@@ -39,7 +39,7 @@ class asr_data_info():
                             'librispeech-clean':'https://www.openslr.org/12',
                             'librispeech-other':'https://www.openslr.org/12',
                             'commonvoice-clean':'https://commonvoice.mozilla.org/en/datasets',
-                            'whisper-spire':'FILL'
+                            'whisper-spire':'-'
                             }
         self.test_speakers = {
                             'librispeech-clean':'40',
