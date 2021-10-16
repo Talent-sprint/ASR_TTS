@@ -44,7 +44,7 @@ class asr_data_info():
         self.test_speakers = {
                             'librispeech-clean':'40',
                             'librispeech-other':'33',
-                            'commonvoice-clean':'3995',
+                            'commonvoice-clean':'38',
                             'whisper-spire':'88'
                             }
         self.test_sentences = {
