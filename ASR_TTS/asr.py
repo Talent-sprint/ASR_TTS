@@ -41,6 +41,24 @@ class asr_data_info():
                             'commonvoice-clean':'https://commonvoice.mozilla.org/en/datasets',
                             'whisper-spire':'FILL'
                             }
+        self.test_speakers = {
+                            'librispeech-clean':'40',
+                            'librispeech-other':'33',
+                            'commonvoice-clean':'3995',
+                            'whisper-spire':'88'
+                            }
+        self.test_sentences = {
+                            'librispeech-clean':'2620',
+                            'librispeech-other':'2939',
+                            'commonvoice-clean':'3995',
+                            'whisper-spire':'4396'
+                            }
+        self.test_durations = {
+                            'librispeech-clean':'5.4 hours',
+                            'librispeech-other':'5.1 hours',
+                            'commonvoice-clean':'4.9 hours',
+                            'whisper-spire':'3.8 hours'
+                            }
 
 
 ASR_MODEL_INFO  = asr_model_info()
@@ -55,6 +73,9 @@ def list_datasets():
     table.column_headers = ["dataset", "num speakers","num sentences","duration", "link"]
     for key in ASR_DATA_INFO.test_datasets:
         table.append_row([key,
+                        ASR_DATA_INFO.test_speakers[key],
+                        ASR_DATA_INFO.test_sentences[key],
+                        ASR_DATA_INFO.test_durations[key],
                         ASR_DATA_INFO.test_datasets[key]
                         ])
     print(table)
